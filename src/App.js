@@ -5,11 +5,15 @@ import './App.css';
 const AppId = 'dapp_8gsf5446h44rsrpyun0pu5qqztm';
 const redirectURL = 'http://localhost:3010/thetadrop-auth-finished.html';
 
-// const ThetaZillaMarketplaceUrl = 'https://thetazilla.thetadrop.com/content/type_2s2kcznsu3e06en43r3kg50b90c';
-const ThetaZillaMarketplaceUrl = 'https://www.thetadrop.com/content/type_8xhxfbp9b83m9fb5hwukqy99jfh'
-// const ThetaZillaId = 'type_2s2kcznsu3e06en43r3kg50b90c';
-const ThetaZillaId = 'type_8xhxfbp9b83m9fb5hwukqy99jf';
-
+const ThetaZillaMarketplaceUrl = 'https://symbiote.thetadrop.com/marketplace?content_creator=user_hq8vr83j3x6zry8g274qzb41jca';
+const Collision = 'type_8xhxfbp9b83m9fb5hwukqy99jfh';
+const Synergy = 'type_xi85tzu5igyxujswyxezrreqew4';
+const The_Architect = 'type_c8jtmgs9b1z2kw8vniv3ynff0sc';
+const Fuse = 'type_hsihbk1jvsdi16x5qka5asthhmp';
+const Vault = 'pack_fc23sf2ka9b5g198ajedikdm47d';
+const Theta_Verse = 'type_ysk9wr77wt05ydfu7bxutvxdz80';
+const Metal_Print = 'type_zwwezd5w7fc4i8x13d1yb0xa2bq';
+const Symbiote = [Collision,Synergy,The_Architect,Fuse,Vault,Theta_Verse,Metal_Print];
 
 class App extends React.Component {
   constructor(props) {
@@ -23,14 +27,13 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    
     // Optional: Use only if using the redirect option
     this.finishConnectViaRedirect();
   }
 
   finishConnectViaRedirect = async () => {
     const result =  await this.thetaDrop.finishConnectViaRedirect();
- 
+
     if(result){
       const {snsId, oauth2Token} = result;
 
@@ -46,7 +49,7 @@ class App extends React.Component {
 
   refreshOwnershipChecks = async () => {
     const filters = {
-      content_id: ThetaZillaId
+      content_id: Symbiote
     };
     await this.thetaDrop.fetchUserNFTs(filters);
 
