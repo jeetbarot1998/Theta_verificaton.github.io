@@ -81,7 +81,7 @@ class App extends React.Component {
   };
 
   connectToThetaDropViaRedirect = async () => {
-    const hostUri = 'https://theta-verification.netlify.app/';
+    const hostUri = 'https://www.google.com/';
     this.thetaDrop.connectViaRedirect(AppId, hostUri);
   };
 
