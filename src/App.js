@@ -3,7 +3,7 @@ import {ThetaDropConnect} from '@thetalabs/theta-drop-connect';
 import './App.css';
 
 const AppId = 'dapp_8gsf5446h44rsrpyun0pu5qqztm';
-const redirectURL = 'https://theta-verification.netlify.app//thetadrop-auth-finished.html';
+const redirectURL = 'https://theta-verification.netlify.app/thetadrop-auth-finished.html';
 
 // const ThetaZillaMarketplaceUrl = 'https://thetazilla.thetadrop.com/content/type_2s2kcznsu3e06en43r3kg50b90c';
 const ThetaZillaMarketplaceUrl = 'https://www.thetadrop.com/content/type_8xhxfbp9b83m9fb5hwukqy99jfh'
@@ -77,7 +77,7 @@ class App extends React.Component {
   };
 
   connectToThetaDropViaRedirect = async () => {
-    const hostUri = 'https://theta-verification.netlify.app/';
+    const hostUri = 'https://theta-verification.netlify.app';
     this.thetaDrop.connectViaRedirect(AppId, hostUri);
   };
 
