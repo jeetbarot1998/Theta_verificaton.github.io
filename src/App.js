@@ -3,7 +3,8 @@ import {ThetaDropConnect} from '@thetalabs/theta-drop-connect';
 import './App.css';
 
 const AppId = 'dapp_8gsf5446h44rsrpyun0pu5qqztm';
-const redirectURL = 'https://theta-verification.netlify.app/thetadrop-auth-finished.html';
+// const redirectURL = 'http://localhost:3010/thetadrop-auth-finished.html';
+const redirectURL = 'https://www.google.com/search?q=fsdfsd&oq=fsdfsd&aqs=chrome..69i57.596j0j1&sourceid=chrome&ie=UTF-8'
 
 // const ThetaZillaMarketplaceUrl = 'https://thetazilla.thetadrop.com/content/type_2s2kcznsu3e06en43r3kg50b90c';
 const ThetaZillaMarketplaceUrl = 'https://www.thetadrop.com/content/type_8xhxfbp9b83m9fb5hwukqy99jfh'
