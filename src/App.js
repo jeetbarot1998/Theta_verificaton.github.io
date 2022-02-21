@@ -2,7 +2,8 @@ import React from 'react';
 import {ThetaDropConnect} from '@thetalabs/theta-drop-connect';
 import './App.css';
 
-const AppId = 'dapp_8gsf5446h44rsrpyun0pu5qqztm';
+// const AppId = 'dapp_8gsf5446h44rsrpyun0pu5qqztm';
+const AppId = 'dapp_407nzp9ggfqr5wy3tna7111rdq1';
 const redirectURL = 'http://localhost:3010/thetadrop-auth-finished.html';
 
 const ThetaZillaMarketplaceUrl = 'https://symbiote.thetadrop.com/marketplace?content_creator=user_hq8vr83j3x6zry8g274qzb41jca';
