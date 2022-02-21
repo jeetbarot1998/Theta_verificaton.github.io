@@ -81,7 +81,7 @@ class App extends React.Component {
   };
 
   connectToThetaDropViaRedirect = async () => {
-    const hostUri = 'https://www.google.com/';
+    const hostUri = 'https://discord.secretpineapplesociety.com/';
     this.thetaDrop.connectViaRedirect(AppId, hostUri);
   };
 
